@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <title>AGRICULTURE MARKET SLOT BOOKING</title>
+    <style media="screen">
+      .slotblock{
+        border-radius: 10px;
+      }
+      .Loginpage{
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <nav>
+        <!-- for left side menu data-->
+        <div class="menu-left">
+          <h3><strong>AGRICULTURE MARKET</strong></h3>
+        </div>
+        <!-- list of items of menu link for other pages-->
+        <div class="menu-list">
+          <ul class="items">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="index.php">Book a Slot</a></li>
+            <li> <a href="admin.php">Admin</a></li>
+            <li> <a href="aboutcrops.html">About</a></li>
+            <li> <a href="login.php">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <!--image slider start-->
+      <div class="slidershow middle">
+        <div class="slides">
+          <!-- radio button start -->
+          <input type="radio" name="r" id="radio1" checked>
+          <input type="radio" name="r" id="radio2">
+          <input type="radio" name="r" id="radio3">
+          <input type="radio" name="r" id="radio4">
+          <input type="radio" name="r" id="radio5">
+          <!-- radio button end-->
+          <!-- slide image start-->
+          <div class="slide s1">
+            <img src="images\mokkajonna1.jpg" alt="Agriculture">
+          </div>
+          <div class="slide s2">
+            <img src="images\organic2.jpg" alt="Agriculture">
+          </div>
+          <div class="slide s3">
+            <img src="images\vari3.jpg" alt="Agriculture">
+          </div>
+          <div class="slide s4">
+            <img src="images\form4.jpg" alt="Agriculture">
+          </div>
+          <div class="slide s5">
+            <img src="images\last5.jpg" alt="Agriculture">
+          </div>
+        </div>
+          <!--slide image end-->
+          <!--automatic navigation start-->
+          <div class="slider-navigation-auto">
+            <div class="auto1"></div>
+            <div class="auto2"></div>
+            <div class="auto3"></div>
+            <div class="auto4"></div>
+            <div class="auto5"></div>
+          </div>
+          <!--automatic navigation end-->
+        <!-- manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual"></label>
+          <label for="radio2" class="manual"></label>
+          <label for="radio3" class="manual"></label>
+          <label for="radio4" class="manual"></label>
+          <label for="radio5" class="manual"></label>
+        </div>
+        <!-- manual navigation end-->
+
+      </div>
+      <!--image slider end-->
+      <div class="slotblock" style="background-image:url(images/back.jpg)">
+        <br>
+        <br>
+        <center>
+        <p>Click here to book your slot for marketing your crops</p>
+        <br>
+        <h2><strong><a href="index.php">BOOK A SLOT HERE</a></strong> </center> </h2>
+        <br>
+        <h5>If u have already booked a slot<a href="search.php">click here</a></h5> 
+      </div>
+      <div class="Loginpage" style="background-image:url(images/back2.jpg)">
+        <center>
+          <br>
+          <br>
+          <h4 class="item"> <a href="admin.php">Admin</a></h4>
+          <br>
+          <br>
+        <h4>If u don't have an account click here to register <a href="registration.php">Register</a> </h4>
+        </center>
+      </div>
+      <div class="extra" style="padding-top:700px">
+
+      </div>
+      <script type="text/javascript">
+        var count = 1;
+        setInterval(function val(){
+          document.getElementById('radio'+count).checked = true;
+          count++;
+          if(count>5){
+            count=1;
+          }
+        },5000);
+      </script>
+  </body>
+</html>
