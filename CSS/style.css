@@ -99,6 +99,7 @@ input[name="r"]{
 
 #radio1:checked ~ .s1{
   margin-left: 0;
+  color: white;
 }
 #radio2:checked ~ .s1{
   margin-left: -20%;
